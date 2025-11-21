@@ -28,8 +28,9 @@ This repository contains message templates and specifications for the UserEntity
 
 ### UserEntity ADD Operation
 ```
-UserEntity(Operation(ADD),OperDate(FirstName(value),LastName(value),UserName(value)[,Address(street, city, country)]))
+UserEntity(Operation(ADD),OperDate(FirstName(value),LastName(value),UserName(value),Address(street, city, country)))
 ```
+- **Address** is an optional field.
 
 See `message-spec.md` for complete specification.
 
@@ -38,8 +39,7 @@ See `message-spec.md` for complete specification.
 ### Adding New Entities
 1. Create folder in `Messages/`
 2. Add template files
-3. Create schema in `Schemas/`
-4. Update `copilot-instructions.md`
+3. Update `copilot-instructions.md`
 
 ### Adding Operations
 1. Update schema with new operation type
