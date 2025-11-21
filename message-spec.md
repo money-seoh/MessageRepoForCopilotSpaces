@@ -9,6 +9,7 @@ UserEntity(Operation(<OP>),OperDate(<FIELDS>))
 
 ### Operations
 - `ADD`: Create new user
+- `UPDATE`: Update existing record of user entity
 
 ### Mandatory Fields
 - `FirstName(value)` - User's first name
@@ -17,6 +18,7 @@ UserEntity(Operation(<OP>),OperDate(<FIELDS>))
 
 ### Optional Fields
 - `Address(street, city, country)` - User's address (comma-separated)
+- `Address(,,)` - User's address (optional comma-separated values)
 
 ### Examples
 
