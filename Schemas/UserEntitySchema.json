@@ -1,0 +1,34 @@
+{
+  "entity": "UserEntity",
+  "operations": ["ADD"],
+  "mandatoryFields": [
+    {
+      "name": "FirstName",
+      "type": "string",
+      "description": "User's first name"
+    },
+    {
+      "name": "LastName",
+      "type": "string",
+      "description": "User's last name"
+    },
+    {
+      "name": "UserName",
+      "type": "string",
+      "description": "Unique username identifier"
+    }
+  ],
+  "optionalFields": [
+    {
+      "name": "Address",
+      "type": "tuple",
+      "components": ["street", "city", "country"],
+      "description": "User's residential address"
+    }
+  ],
+  "validationRules": [
+    "UserName must be alphanumeric with no spaces",
+    "Address components must be comma-separated",
+    "All mandatory fields required for ADD operation"
+  ]
+}
